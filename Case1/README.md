@@ -1,21 +1,4 @@
----
-title: "Capital Asset Pricing Model for IBM Stocks"
-date: 2019-09-11T07:34:30-04:00
-permalink: /bian/2019-09-28-fa/
-categories:
-  - Portfolio
-tags:
-  - Finance
-  - R
-  - Hypothesis Testing
-  - CAPM
-  - Stock Market
-  - Sharpe Ratio
-  - Risk Management
-  - Correlation
-  - Statistical Analysis
----
-Analysis of IBM's 1994-2015 stock market performance using Capital Asset Pricing Model (CAPM).
+## Analysis of IBM's 1994-2015 stock market performance using Capital Asset Pricing Model (CAPM).
 
 **Step 1:** Imported the data into RStudio environment
 
@@ -38,7 +21,7 @@ for (i in 252:lg){
 ```
 Time-series plot of market's annual excess return:
 
-<img src="/Case1_marketEXRET_Annualized.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_marketEXRET_Annualized.jpeg?raw=true"/>
 
 **Step 3:** Found the global maximum
 
@@ -56,21 +39,21 @@ for(i in (252*5):lg){
 ```
 Time-series plot of market's 5-yearly excess return:
 
-<img src="/assets/images/financial-analytics/Case1_marketEXRET_5Year.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_marketEXRET_5Year.jpeg?raw=true"/>
 
 **Step 5:** Visualize the spread of the daily returns
 
 - Boxplot of excess market returns:
 
-<img src="/assets/images/financial-analytics/Daily_Market_Excess_Returns_Percentage_Boxplot.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Daily_Market_Excess_Returns_Percentage_Boxplot.jpeg?raw=true"/>
 
 - Boxplot of excess IBM's stock returns:
 
-<img src="/assets/images/financial-analytics/Daily_IBM_Excess_Returns_Percentage_Boxplot.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Daily_IBM_Excess_Returns_Percentage_Boxplot.jpeg?raw=true"/>
 
 - Scatter-plot of daily IBM vs. market excess returns:
 
-<img src="/assets/images/financial-analytics/Scatter_Plots_Stock_Returns.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Scatter_Plots_Stock_Returns.jpeg?raw=true"/>
 
 **Step 6:** Check the various moments of IBM's and market excess returns:
 
@@ -89,19 +72,19 @@ Time-series plot of market's 5-yearly excess return:
 
 Histogram of market's excess returns:
 
-<img src="/assets/images/financial-analytics/Case1_histmarketEXERT.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_histmarketEXERT.jpeg?raw=true"/>
 
 Histogram of IBM's excess returns:
 
-<img src="/assets/images/financial-analytics/Case1_histIBMEXRET.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_histIBMEXRET.jpeg?raw=true"/>
 
 QQ-plot for market's excess returns:
 
-<img src="/assets/images/financial-analytics/Case1_QQmarketEXRET.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_QQmarketEXRET.jpeg?raw=true"/>
 
 QQ-plot for IBM's excess returns:
 
-<img src="/assets/images/financial-analytics/Case1_QQIBMEXRET.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_QQIBMEXRET.jpeg?raw=true"/>
 
 **Step 7:** Hypothesis testing
 
@@ -137,7 +120,7 @@ F-statistic:  3044 on 1 and 5538 DF,  p-value: < 2.2e-16
 
 Plot of OLS line:
 
-<img src="/assets/images/financial-analytics/Case1_OLSLINE.jpeg?raw=true"/>
+<img src="https://github.com/Advaitiyer/advaitiyer.github.io/blob/master/assets/images/financial-analytics/Case1_OLSLINE.jpeg?raw=true"/>
 
 **Alternate hypothesis: Is the risk adjusted returns zero?** 
 **Result:** Cannot reject null hypothesis, so risk-adjusted returns are not zero!
